@@ -87,7 +87,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            "host": "mongodb+srv://admin:khanh1234@guitarapp.z3fsfyw.mongodb.net/?retryWrites=true&w=majority",
+            "host": "", # connection string
             "name": "test",
             "authMechanism": "SCRAM-SHA-1"
         },
