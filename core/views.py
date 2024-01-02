@@ -5,12 +5,14 @@ from core.models import ChordImages
 from core.serializers import ChordImagesSerializer
 from rest_framework.decorators import api_view
 
+from urllib.parse import unquote
 from core.services import scrape_for_images
 
 
 @api_view(['GET'])
 def get_chord_images(request):
-    chord_name = request.GET.get('chord_name').lower()
+    chord_name = request.GET.get('chord_name')
+    chord_name = unquote(chord_name).lower()
     chord_images = ChordImages.objects.filter(chord_name = chord_name).first()
 
     if chord_images is not None:
