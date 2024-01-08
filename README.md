@@ -4,6 +4,7 @@ Contains API for frontend at https://github.com/khanhvu0/guitarapp_frontend
 
 - Made with Django/DRF and MongoDB
 - Implemented a webscraper using BeautifulSoup for chord diagrams at https://www.scales-chords.com
+- Dockerized and deployed on an AWS EC2 instance
 
 <br>
 <br>
