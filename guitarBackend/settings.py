@@ -38,10 +38,15 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig'
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:5173',
-)
+# CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:5173',
+# )
+
+CORS_ALLOWED_ORIGINS = [
+    'https://guitarapp-backend.onrender.com',
+    'http://localhost:5173'
+]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
