@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 # )
 
 CORS_ALLOWED_ORIGINS = [
-    'https://guitarapp-backend.onrender.com',
+    'https://guitarchordbook.onrender.com',
     'http://localhost:5173'
 ]
 
